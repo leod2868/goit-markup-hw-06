@@ -45,45 +45,41 @@
        <div class="backdrop is-hidden" data-modal>
        <div class="modal">
         <button class="closer" data-modal-close>
-          <!-- <svg width="30" height="30">
+          <svg width="30" height="30">
             <use href="./images/symbol-defs.svg#icon-close" ></use>
-          </svg> -->
-          <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="none">
-            <circle cx="15" cy="15" r="15" fill="#fff" />
-            <circle cx="15" cy="15" r="14.5" stroke="#000" stroke-opacity=".1" />
-            <path fill="#000"
-              d="M21 10.1079 19.8921 9 15.5 13.3921 11.1079 9 10 10.1079 14.3921 14.5 10 18.8921 11.1079 20 15.5 15.6079 19.8921 20 21 18.8921 16.6079 14.5 21 10.1079Z" />
           </svg>
+          
         </button>
           <form >
             <p class="data">Залиште свої дані, ми вам передзвонимо</p>
             <div class="form">
               <label for="name">Ім'я</label>
-              <input type="text" name="name" class="form-frame">
+              <input type="text" name="name"  id="name" class="form-frame">
               <svg width="18px" height="18px" class="mini">
                <use href="./images/symbol-defs.svg#icon-person"></use>
               </svg>
             </div>
             <div class="form" >
               <label for="tel">Телефон</label>
-              <input type="tel" name="tel" class="form-frame" >
+              <input type="tel" name="tel" id="tel"  class="form-frame" >
               <svg width="18px" height="18px" class="mini">
                 <use href="./images/symbol-defs.svg#icon-phone-black"></use>
               </svg>
             </div>
             <div class="form" >
               <label for="email">Пошта</label>
-              <input type="email" name="mail" class="form-frame" >
+              <input type="email" name="mail" id="email" class="form-frame" >
               <svg width="18px" height="18px" class="mini">
                 <use href="./images/symbol-defs.svg#icon-email-black"></use>
               </svg>
             </div>
             <div class="form" >
               <label for="comment">Коментар</label>
-              <textarea name="comment" class="form-bigframe" cols="30" rows="7" placeholder="Введіть текст"></textarea>
+              <textarea name="comment" class="form-bigframe" id="comment"  cols="30" rows="7" placeholder="Введіть текст"></textarea>
             </div>
             <div class="policy">
-              <input type="checkbox" name="policy" class="chec">
+              <input type="checkbox" name="policy" id="policy" class="chec">
+              <span class="jackdaw"></span>
               <label for="policy">Погоджуюся з розсилкою та приймаю <a href="" class="treaty">Умови договору</a></label>
             </div>
             <button type="submit" class="submit post" >Відправити</button>

@@ -232,6 +232,7 @@ color: var(--primary-text-color);
   top: 8px;
   right: 8px;
 }
+
 .data {
   font-weight: 700;
   font-size: 20px;
@@ -252,7 +253,15 @@ color: var(--primary-text-color);
   height: 40px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
+  padding: 12px 42px;
   
+}
+.form-frame:focus {
+  border: 1px solid var(--accent-color)
+  
+}
+.form-frame:focus + .mini {
+fill: var(--accent-color);
 }
 .form-bigframe {
   width: 448px;
@@ -264,14 +273,30 @@ color: var(--primary-text-color);
   margin-bottom: 4px;
 }
 .policy {
-  display:flex;
+  display: flex ;
   align-items: center;
-  margin-left: 12px;
   margin-top: 20px;
   margin-bottom: 30px;
 }
+.jackdaw {
+  display: inline-block;
+  width: 16px;
+  height: 15px;
+  border: 2px solid rgba(33, 33, 33, 1);
+  border-radius: 4px;
+  margin-right: 7px;
+  margin-left: 12px;
+}
+.chec:checked  + .jackdaw {
+  border-color: var(--accent-color);
+  background-color: var(--accent-color);
+  background-image: url('../images/iconsuper.svg');
+  background-size: contain;
+  background-origin: border-box;
+}
 .chec {
   margin-right: 8px;
+  appearance: none;
 }
 .post {
   justify-content: center;
