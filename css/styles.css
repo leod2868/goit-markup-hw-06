@@ -246,7 +246,9 @@ color: var(--primary-text-color);
   margin-bottom: 10px;
   align-items: flex-start;
   position: relative;
-
+}
+.form:last-child {
+  margin-bottom: 0;
 }
 .form-frame {
   width: 100%;
@@ -254,11 +256,13 @@ color: var(--primary-text-color);
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   padding: 12px 42px;
-  
+  outline: transparent;
+  transition: border 250ms var(--timing-function);
 }
-.form-frame:focus {
-  border: 1px solid var(--accent-color)
-  
+.form-frame:focus ,
+.form-bigframe:focus
+ {
+  border: 1px solid var(--accent-color) 
 }
 .form-frame:focus + .mini {
 fill: var(--accent-color);
@@ -268,6 +272,9 @@ fill: var(--accent-color);
   padding: 12px 16px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4pxa;
+  outline: transparent;
+  resize: none;
+  transition: border 250ms var(--timing-function);
 }
 .form label {
   margin-bottom: 4px;
@@ -308,11 +315,21 @@ fill: var(--accent-color);
 }
 .mini {
   position: absolute;
-  top: 37%;
+  top: 50%;
   left: 12px;
-  transform: translateY(50%);
-
-
+  transition: fill 250ms var(--timing-function);
+  /* transform: translateY(50%); */
+}
+.table {
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+}
+.face {
+ont-size: 12px;
+line-height: 1.16;
+letter-spacing: 0.01em;
+color: rgba(117, 117, 117, 0.5);
 }
 /* стилизація трьох секцій */
 .benefits {
@@ -590,9 +607,10 @@ margin-left: 12px;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   padding: 15px 16px;
+  background-color: transparent;
 }
 .subscription {
-  margin-left: 93px;
+  margin-left: auto;
 }
 /* стілізація сторінки portofolio */
 .top {
