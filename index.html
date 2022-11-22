@@ -73,14 +73,16 @@
                 <use href="./images/symbol-defs.svg#icon-email-black"></use>
               </svg>
             </div>
-            <div class="form" class="face">
-              <label for="comment">Коментар</label>
+            <div class="form-textarea">
+              <label for="comment" class="table">Коментар</label>
               <textarea name="comment" class="form-bigframe" id="comment"  cols="30" rows="7" placeholder="Введіть текст"></textarea>
             </div>
             <div class="policy">
-              <input type="checkbox" name="policy" id="policy" class="chec">
-              <span class="jackdaw"></span>
-              <label for="policy">Погоджуюся з розсилкою та приймаю <a href="" class="treaty">Умови договору</a></label>
+              <label class="check option">
+                <input class="check__input" type="checkbox">
+                <span class="check__box"></span>
+                Погоджуюся з розсилкою та приймаю <a href="" class="treaty">Умови договору</a>
+              </label>
             </div>
             <button type="submit" class="submit post" >Відправити</button>
 
